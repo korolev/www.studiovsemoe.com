@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'PFAgoraSansPro_Black';
+    src:
+       url('../fonts/pf_agora_sans_pro_black_regular.ttf') format('truetype');
+    src:
+       url('../fonts/pfagorasanspro-black.woff');
+}
+
+@font-face {
+    font-family: 'PFAgoraSlabPro_Bold';
+    src: url('../fonts/pf_agora_slab_pro_black_regular.eot') format('embedded-opentype');
+    src:
+       url('../fonts/pf_agora_slab_pro_bold.ttf') format('truetype');
+    src:
+       url('../fonts/pfagoraslabpro-bold.woff');
+}
+
+@font-face {
+    font-family: 'PFAgoraSlabPro_Black';
+    src:
+       url('../fonts/pf_agora_slab_pro_black_regular.ttf') format('truetype');
+    src:
+       url('../fonts/pfagoraslabpro-black.woff');
+}
+
+@font-face {
+    font-family: 'PFAgoraSansPro_Medium';
+    src:
+       url('../fonts/pf_agora_sans_pro_medium_regular.ttf') format('truetype');
+    src:
+       url('../fonts/pfagorasanspro-medium.woff');
+}
+
+@font-face {
+    font-family: 'PFAgoraSansPro_Light';
+    src:
+       url('../fonts/pf_agora_sans_pro_light_regular.ttf') format('truetype');
+    src:
+       url('../fonts/pfagorasanspro-light.woff');
+}
+
+@font-face {
+    font-family: 'PFAgoraSerifPro';
+    src:
+       url('../fonts/pf_agora_serif_pro_regular.ttf') format('truetype');
+    src:
+       url('../fonts/pfagoraserifpro-regular.woff');
+}
+
+@font-face {
+    font-family: 'PFAgoraSansPro';
+    src:
+       url('../fonts/pf_agora_sans_pro_regular.ttf') format('truetype');
+    src:
+       url('../fonts/pfagorasanspro-regular.woff');
+}
+
+@font-face {
+    font-family: 'PFAgoraSans_LightItalic';
+    src:
+       url('../fonts/pf_agora_sans_pro_light_italic.ttf') format('truetype');
+    src:
+       url('../fonts/pfagorasanspro-lightitalic.woff');
+}
+
+@font-face {
+    font-family: 'EtelkaLightPro';
+    src:
+       url('../fonts/Etelka-Light-Pro.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PFAgoraSlabPro';
+    src:
+       url('../fonts/PFAgoraSlabPro-Reg.ttf') format('truetype');
+    src:
+       url('../fonts/pfagoraslabpro-regular.woff');
+}
+
+@font-face {
+    font-family: 'PFAgoraSansPro_Bold';
+    src:
+       url('../fonts/pf_agora_sans_pro_bold.ttf') format('truetype');
+    src:
+       url('../fonts/pfagorasanspro-bold.woff');
+}
