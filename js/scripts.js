@@ -182,6 +182,7 @@ $(document).ready(function() {
       nextButtonClick();
     }, 8000);
   }
+  
 
   setTimeout(function() {
     console.log('HI2');
