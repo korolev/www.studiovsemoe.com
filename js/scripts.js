@@ -161,7 +161,7 @@ $(document).ready(function() {
     var bg_holder = $('.absolute_img_holder');
     bg_holder.animate({
       'opacity': '0.1'
-    }, 200, function() {
+    }, 0, function() {
       bg_holder.animate({
         'opacity': '1'
       }, 400);
@@ -183,7 +183,7 @@ $(document).ready(function() {
     var bg_holder = $('.absolute_img_holder');
     bg_holder.animate({
       'opacity': '0.1'
-    }, 200, function(){
+    }, 0, function(){
       bg_holder.animate({
         'opacity': '1'
       }, 400);
