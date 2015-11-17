@@ -212,10 +212,10 @@ $(document).ready(function() {
 
   $('body').on('startAnimate',function(){
     console.log('startAnimate',arguments);
-    //setTimeout(function() {
-    //    console.log('HI2');
-    //    nextButtonClick();
-    //  }, 8000);
+    setTimeout(function() {
+        console.log('HI2');
+        nextButtonClick();
+      }, 8000);
   });
 
   $("body").on('mouseup', function(e) {
