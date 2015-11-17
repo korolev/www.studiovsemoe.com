@@ -22,9 +22,9 @@ a {
 
 body {
   min-width: 1100px;
-  //background: white;
-  //background: url(../images/home-bg.jpg) 0 0 repeat fixed;
-  //background-attachment: fixed;
+  /*//background: white;*/
+  /*//background: url(../images/home-bg.jpg) 0 0 repeat fixed;*/
+  /*//background-attachment: fixed;*/
 }
 
 a {
@@ -35,7 +35,7 @@ ul {
   list-style: none !important;
 }
 .header-middle, .header-bottom, .content-wrapper {
-  //max-width: 1200px;
+  /*//max-width: 1200px;*/
   margin: 0 auto !important;
 }
 
@@ -57,107 +57,139 @@ ul {
 .header {
   height: 415px;
   height: 250px;
-  background-position: center;
-  background-color: white !important;
+  background-position: top;
+  /*background-color: white !important;*/
+  position: relative;
 }
 
 .header.main-page{
   height: 415px;
 }
 
-.header.active1 {
+.header .absolute_img_holder{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
   background-image: url(../images/header-bg1.jpg);
   background-position: top;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
-.header.active2 {
-  background: url(../images/header-bg2.jpg);
-  background-position: top;
+
+.header.active1 .absolute_img_holder{
+  background-image: url(../images/header-bg1.jpg);
+
 }
 
-.header.active3 {
-  background: url(../images/header-bg3.jpg);
-  background-position: top;
+
+.header.active2 .absolute_img_holder{
+  background-image: url(../images/header-bg2.jpg);
+
 }
 
-.header.active4 {
-  background: url(../images/header-bg4.jpg);
-  background-position: top;
+
+.header.active3 .absolute_img_holder{
+  background-image: url(../images/header-bg3.jpg);
+
 }
 
-.header.active5 {
-  background: url(../images/header-bg5.jpg);
-  background-position: top;
+
+.header.active4 .absolute_img_holder{
+  background-image: url(../images/header-bg4.jpg);
+
 }
 
-.header.active6 {
-  background: url(../images/header-bg6.jpg);
-  background-position: top;
+
+.header.active5 .absolute_img_holder{
+  background-image: url(../images/header-bg5.jpg);
+
 }
 
-.header.active7 {
-  background: url(../images/header-bg7.jpg);
-  background-position: top;
+
+.header.active6 .absolute_img_holder{
+  background-image: url(../images/header-bg6.jpg);
+
 }
 
-.header.active8 {
-  background: url(../images/header-bg8.jpg);
-  background-position: top;
+
+.header.active7 .absolute_img_holder{
+  background-image: url(../images/header-bg7.jpg);
+
 }
 
-.header.active9 {
-  background: url(../images/header-bg9.jpg);
-  background-position: top;
+
+.header.active8 .absolute_img_holder{
+  background-image: url(../images/header-bg8.jpg);
+
 }
 
-.header.active10 {
-  background: url(../images/header-bg10.jpg);
-  background-position: top;
+
+.header.active9 .absolute_img_holder{
+  background-image: url(../images/header-bg9.jpg);
+
 }
 
-.header.active11 {
-  background: url(../images/header-bg11.jpg);
-  background-position: top;
+
+.header.active10 .absolute_img_holder{
+  background-image: url(../images/header-bg10.jpg);
+
 }
 
-.header.active12 {
-  background: url(../images/header-bg12.jpg);
-  background-position: top;
+
+.header.active11 .absolute_img_holder{
+  background-image: url(../images/header-bg11.jpg);
+
 }
 
-.header.active13 {
-  background: url(../images/header-bg13.jpg);
-  background-position: top;
+
+.header.active12 .absolute_img_holder{
+  background-image: url(../images/header-bg12.jpg);
+
 }
 
-.header.active14 {
-  background: url(../images/header-bg14.jpg);
-  background-position: top;
+
+.header.active13 .absolute_img_holder{
+  background-image: url(../images/header-bg13.jpg);
+
 }
 
-.header.active15 {
-  background: url(../images/header-bg15.jpg);
-  background-position: top;
+
+.header.active14 .absolute_img_holder{
+  background-image: url(../images/header-bg14.jpg);
+
 }
 
-.header.active16 {
-  background: url(../images/header-bg16.jpg);
-  background-position: top;
+
+.header.active15 .absolute_img_holder{
+  background-image: url(../images/header-bg15.jpg);
+
 }
 
-.header.active17 {
-  background: url(../images/header-bg17.jpg);
-  background-position: top;
+
+.header.active16 .absolute_img_holder{
+  background-image: url(../images/header-bg16.jpg);
+
 }
 
-.header.active18 {
+
+.header.active17 .absolute_img_holder{
+  background-image: url(../images/header-bg17.jpg);
+
+}
+
+
+.header.active18 .absolute_img_holder{
 	background-position: top;
 	background-image: url(../images/header-bg1.jpg);
 }
 
-.header.active19 {
-  background: url(../images/header-bg19.jpg);
-  background-position: top;
+
+.header.active19 .absolute_img_holder{
+  background-image: url(../images/header-bg19.jpg);
+
 }
 
 .top-panel {

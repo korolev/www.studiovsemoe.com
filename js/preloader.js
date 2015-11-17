@@ -3,6 +3,7 @@ $(document).ready(function(){
 //Осуществляем предзагрузку картинок!
 
 function init() {
+	return false;
 	// quit if this function has already been called
 	if (arguments.callee.done) return;
 	
@@ -11,7 +12,7 @@ function init() {
 
 	// preload images
     preload([
-		'images/header-bg1.jpg',
+		//'images/header-bg1.jpg',
 		'images/header-bg2.jpg',
 		'images/header-bg3.jpg',
 		'images/header-bg4.jpg',
@@ -44,21 +45,6 @@ function init() {
 
    };
 
-/* for Mozilla */
-if (document.addEventListener)
-{
-	document.addEventListener("DOMContentLoaded", init, false);
-}
-
-/* for Internet Explorer */
-/*@cc_on @*/
-/*@if (@_win32)
-	document.write("<script defer src=js/ie_onload.js><"+"/script<");
-/*@end @*/
-
-/* for other browsers */
-window.onload = init;
-
 function preload(images) {
     if (typeof document.body == "undefined") return;
     try {
@@ -78,5 +64,7 @@ function preload(images) {
         // Error. Do nothing.
 	}
 }
+
+setTimeout(init,4000);
 
 }); 

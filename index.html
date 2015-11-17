@@ -68,7 +68,7 @@
     </script>
     
 </head>
-<body>
+<body style="display: none">
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -87,6 +87,7 @@
 	<!-- Маска для ввода нмоера телефона END-->
     <div itemscope itemtype="http://schema.org/LocalBusiness" class="container-fluid main-wrapper">
 		<div class='header container-fluid active1 main-page'>
+			<div class="absolute_img_holder"></div>
 			<a name="header"></a>
 			
 <!-- +++++++++++++++++++++++++++++++++++++ -->
@@ -1561,9 +1562,9 @@
 			    infinite: true,
 				slidesToShow: 3,
 				slidesToScroll: 3,
-				autoPlay: true,
+				autoPlay: false,
 				arrows: true,
-				autoplay: true,
+				autoplay: false,
                 autoplaySpeed: 10000
 			});
 			$('.prods-slider').slick({
