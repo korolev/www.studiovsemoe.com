@@ -207,7 +207,7 @@ $(document).ready(function() {
     $('#change-header').trigger('click');
     setTimeout(function() {
       nextButtonClick();
-    }, 10000);
+    }, 7000);
   };
 
   $('body').on('startAnimate',function(){
@@ -215,7 +215,7 @@ $(document).ready(function() {
     setTimeout(function() {
         console.log('HI2');
         nextButtonClick();
-      }, 8000);
+      }, 6000);
   });
 
   $("body").on('mouseup', function(e) {
