@@ -2607,3 +2607,75 @@ ul {
   opacity: 0;
   margin-left: -600px;
 }
+
+.header.custom_contacts{
+  background-color: #2B3B45;
+  height: 195px;
+}
+
+.header .header-bottom.custom_contacts{
+  display: none;
+}
+
+.content1.custom_contacts{
+  height: 617px;
+  background-color: #2B3B45;
+  overflow: hidden;
+}
+
+.contacts_maps_holder{
+  background-color: #2B3B45;
+  width: 1100px;
+  height: 615px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.map_holder{
+  background-color: #E5E3DF;
+  width: 1500px;
+  margin-left: 90px;
+}
+
+.bg_holder{
+  position: absolute;
+  background-color: #2B3B45;
+  height: 1000px;
+  width: 1000px;
+  transform: rotate(34deg);
+  left: -357px;
+  position: absolute;
+  top: -366px;
+}
+
+.text_holder{
+  background-color: transparent;
+  position: absolute;
+  height: 615px;
+  width: 550px;
+  left: 99px;
+  top: 0px;
+}
+
+
+.footer.custom_contacts{
+  margin-top: -1px;
+}
+
+
+.text_holder a,
+.text_holder span,
+.text_holder  p{
+  font-size: 18px;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.text_holder .first_p{
+  margin-top: 70px;
+}
+
+.text_holder span + div {
+  display: none;
+}
+

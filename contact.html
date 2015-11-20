@@ -42,7 +42,7 @@
 	<!-- Маска для ввода нмоера телефона END-->
 
 	<div class="container-fluid main-wrapper">
-		<div class='header container-fluid active18'>
+		<div class='header container-fluid active18 custom_contacts'>
 			<a name="header"></a>
 			
 <!-- +++++++++++++++++++++++++++++++++++++ -->
@@ -207,13 +207,13 @@
 					</div>
 					<div class="clear"></div>
 					<div class="row">
-						<div class="services-common-title"><h1>О КОМПАНИИ</h1></div>
+						<div class="services-common-title"><h1>КОНТАКТЫ</h1></div>
 
 					</div>
 				</div>
 			</div>
 
-			<div class="header-bottom">
+			<div class="header-bottom custom_contacts">
 				<div class="col-lg-24 col-md-24 col-sm-24 col-xs-24 main-menu">
 					
 				</div>
@@ -222,58 +222,61 @@
 		</div> <!-- END OF HEADER -->
 		<div class="clear"></div>
 
-		<div class='content container-fluid content1'>
-			<div class="container-fluid outer-color-box">
-				<div class="row box-inner">
-					<div class="services-panel">
-						<div class="text1">
-							О КОМПАНИИ
-						</div>
-						<div class="text0">
-							<div class="text2">&gt; &nbsp;</div>
-							<div class="text3"><a href="contact.html">О НАС</a></div>
-							<div class="clear"></div>
-						</div>
-						<div>
-							<ul>
-								<li class="active"><a href="contact.html">КОНТАКТЫ</a></li>
-								<li><a href="company.html">О КОМПАНИИ</a></li>
-								<li><a href="mission.html">МИССИЯ</a></li>
-								<li><a href="difference.html">ЧЕМ МЫ ОТЛИЧАЕМСЯ</a></li>
-								<li><a href="Principles.html">ПРИНЦИПЫ</a></li>
-                                <li><a href="price.html">ЦЕНОВАЯ ПОЛИТИКА</a></li>
-							</ul>
-						</div>
+		<div class='content container-fluid content1 custom_contacts'>
+			<div class="contacts_maps_holder">
+				<div class="bg_holder"></div>
+				<div class="text_holder">
+					<p class="first_p">
+						﻿Главный Офис:<br>
+						121087, г. Москва, Береговой пр., д.7, корп.1, оф.1.<br>
+						Т: +7 (495) 777 09 24,<br>
+						по рабочим дням с 10:00 до 19:00<br>
+						<a href="mailto:info@studiovsemoe.com">info@studiovsemoe.com</a>
+					</p>
+
+					<script>
+						$(function(){
+							var div = $('#hide_for_inline_js'),
+									state = 0;
+
+							$('#for_inline_js').css({'cursor':'pointer'}).click(function(){
+								if(state == 0){
+									state = 1;
+									div.show(500);
+								}else{
+									state = 0;
+									div.hide(500);
+								}
+							});
+							$('#contact_form_btn').click(function(){
+								$('.contact-btn').trigger('click');
+							})
+						});
+					</script>
+					<span id="for_inline_js">РЕКВИЗИТЫ</span>
+					<div id="hide_for_inline_js">
+						<p>
+							ИНН 7730677750, КПП 773001001 <br>
+							ОГРН: 1127747242270<br>
+							Банковские реквизиты:<br>
+							ОАО «СМП Банк»<br>
+							БИК 044583503<br>
+							Р/с 40702810300050000107<br>
+							к/с 30101810300000000503<br>
+						</p>
 					</div>
 
-					<div class="services-body">
-						<h2>Контакты</h2>
-
-						 <div class="text1"> 
-							ООО «Всё Моё» <br/>
-                         </div>
-                            <br/>
-                         <div class="text2">   
-							
-							<p>Т: <span itemprop="telephone"> <a href="tel:+74957770924"> +7 (495) 777-09-24</a> </span><br>
-                             c 10 до 19 часов по рабочим дням.<br>
-                            E: <a href="mailto:info@studiovsemoe.com"> <span itemprop="email"> info@studiovsemoe.com </span> <br>
-                            </a>
-						
-							Адрес: 121087, г. Москва, Береговой пр., д.7, корп.1, оф.1 <br/>
-                            Студия «Всё Моё» <br/>
-							<br/><br/>
-                            РЕКВИЗИТЫ <br/>
-                            ИНН 7730677750, КПП 773001001, <br/>
-                            ОГРН: 1127747242270 <br/>
-							</p>
-                    </div>
-
-						</div>
-					<div class="clear"></div>
+					<p>
+						<span  id='contact_form_btn' style="cursor: pointer">Свяжитесь с Нами Онлайн >>></span>
+					</p>
 				</div>
+				<div class="map_holder">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.213065628831!2d37.50853472602578!3d55.754800868061956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54942b6bbd8c1%3A0x198aa4a5197a3f5c!2sBeregovoy+pr-d%2C+7%2C+Moskva%2C+Russia%2C+121087!5e0!3m2!1sen!2s!4v1448041849003"
+							width="1500" height="615" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+
 			</div>
-		<div class="content-unit12">
+		<div class="content-unit12 custom_contacts">
 				<div class="row content-wrapper">
 	<!--				<div class="col-lg-24 col-md-24 col-sm-24 col-xs-24 content-item12">
 					<a href="map.html">
@@ -284,7 +287,7 @@
 			</div>
 		</div>
 
-		<div class='footer container-fluid'>
+		<div class='footer container-fluid custom_contacts'>
 			<div class=" footer-wrapper">
 				<div class="row footer-main">
 					<div class="col-lg-24 col-md-24 col-sm-24 col-xs-24 selected">
