@@ -1,5 +1,72 @@
 $(document).ready(function() {
 
+  var make_map = function(){
+    var isMain = !!$('.main-page').length;
+    var btnTpl = '<div class="site_map_btn">' +
+            '<div class="site_map_prehead"></div>' +
+            '<div class="site_map_head">' +
+            '<div class="site_map_pic"></div>' +
+            '<div class="site_map_title">Карта сайта</div>' +
+            '</div>' +
+            '<div class="site_map_body"></div>' +
+            '</div>',
+       tpl = '<div class="site_map_tpl open">' +
+        '<div class="site_map_prehead"></div>' +
+          '<div class="site_map_head">' +
+            '<div class="site_map_pic"></div>' +
+            '<div class="site_map_title">Карта сайта</div>' +
+            '<div class="site_map_close"></div> ' +
+          '</div>' +
+          '<div class="site_map_body"></div>' +
+        '</div>';
+
+    var overlay = $('<div id="overlayForMap"></div>'),
+        site_map_tpl = $(tpl),
+        site_map_btn =  $('.site_map_btn'),
+        site_map_close = site_map_tpl.find('.site_map_close'),
+        site_map_body = site_map_tpl.find('.site_map_body');
+
+    $('body').append(overlay);
+    site_map_tpl.insertAfter(overlay);
+
+    var drop_list1 = $('.drop-list1').clone().html(),
+        drop_list2 = $('.drop-list2').clone().html();
+
+    if(!isMain){
+      $('.footer-wrapper .row').each(function(k,el){
+        console.log(k,el);
+        $(el).prepend(btnTpl);
+        site_map_btn =  $('.site_map_btn');
+      });
+
+      $.get('site_map_body.html',function(r){
+        site_map_body.html($(r).html());
+        $('.for_drop-list1').html(drop_list1);
+        $('.all_prj_list').html(drop_list2);
+        $('#close_map_open_d').click(function(){
+          overlay.hide();
+          site_map_tpl.hide();
+          $('.contact-btn').trigger('click');
+        });
+      });
+
+      site_map_close.click(function(){
+        overlay.hide();
+        site_map_tpl.hide();
+      });
+      site_map_btn.click(function(){
+        overlay.show();
+        site_map_tpl.show(400);
+      });
+    }
+  };
+
+  setTimeout(function(){
+    make_map();
+  },500);
+
+
+
   var mainImage = new Image();
   mainImage.onload = function () {
     setTimeout(function(){
@@ -202,7 +269,6 @@ $(document).ready(function() {
   });
 
   var nextButtonClick = function() {
-    console.log('HI');
     $('body').trigger('mouseup');
     $('#change-header').trigger('click');
     setTimeout(function() {
@@ -213,7 +279,6 @@ $(document).ready(function() {
   $('body').on('startAnimate',function(){
     console.log('startAnimate',arguments);
     setTimeout(function() {
-        console.log('HI2');
         nextButtonClick();
       }, 5000);
   });

@@ -7,6 +7,11 @@
   display: none;
 }
 
+span.dot { position:absolute; text-indent: -1000em; }
+span.ruble { text-transform:uppercase; }
+span.hyphen:after { content: '\2013'; }
+span.hyphen { position:absolute; margin:.1ex 0 0; behavior: expression(this.innerHTML = '&ndash;'); }
+
 h2 {
   padding: 0 !important;
   margin: 0 !important;
@@ -53,6 +58,38 @@ ul {
   margin: 0 auto !important;
   //overflow: hidden;
 }
+ol{
+  padding-left: 15px;
+}
+
+ol li{
+  padding: 0;
+  font-family: PFAgoraSansPro_Light;
+}
+
+.price-table{
+  font-family: PFAgoraSansPro_Light;
+  width: 100%;
+}
+
+.price-table thead tr{
+  background-color: #FE6000;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  vertical-align: top;
+}
+.price-table thead tr td{
+  width: 28%;
+}
+
+.price-table tbody tr:nth-child(2n){
+  background-color: #ECE9E2;
+}
+
+.price-table tr td{
+  padding: 5px;
+}
+
 
 .header {
   height: 415px;
@@ -190,6 +227,12 @@ ul {
 .header.active19,
 .header.active19 .absolute_img_holder{
   background-image: url(../images/header-bg19.jpg);
+
+}
+
+.header.active20,
+.header.active20 .absolute_img_holder{
+  background-image: url(../images/header-bg20.jpg);
 
 }
 
@@ -384,19 +427,23 @@ ul {
 }
 
 
+.site_map_tpl ul ,
 .main-menu .menu-main .inside ul {
   padding: 0 !important;
   margin: 0 !important;
 }
 
+.site_map_tpl ul li,
 .main-menu .menu-main .inside ul li {
   padding: 0 3px;
 }
 
+.site_map_tpl ul li:hover,
 .main-menu .menu-main .inside ul li:hover {
   background: #F3F0E9;
 }
 
+.site_map_tpl ul a,
 .main-menu .menu-main .inside ul a{
   color: black;
   line-height: 1.8;
@@ -408,6 +455,7 @@ ul {
 }
 
 
+.site_map_tpl ul lia a:before,
 .main-menu .menu-main .inside ul li a:before{
   font-family: comic-sans;
   content: '.';
@@ -416,6 +464,18 @@ ul {
   line-height: 0;
   //padding-bottom: 30px !important;
   padding-right: 6px;
+}
+
+.site_map_tpl ul li:before {
+  color: #fe6000;
+  content: "•";
+  font-family: comic-sans;
+  font-size: 21px;
+  height: 0;
+  line-height: 0 !important;
+  margin: 10px 0 0 -15px;
+  padding: 0;
+  position: absolute;
 }
 
 .drop-list1 {
@@ -1697,6 +1757,10 @@ ul {
   font-family:PFAgoraSansPro;
 }
 
+/*.content-item11{
+  padding-bottom: 20px;
+}*/
+
 .content-unit11 .content-item11 .block-header {
   margin-top: 93px;
   font-size: 40px;
@@ -1850,6 +1914,10 @@ ul {
   //outline: 1px solid red;
   background: #102022;
   font-family: PFAgoraSansPro;
+}
+
+.footer-wrapper > div{
+  position: relative;
 }
 
 .footer .logo-2{
@@ -2177,6 +2245,11 @@ ul {
 	padding-left: 23px;
 }
 
+.services-panel.blue-panel{
+  background: url(../images/stripes.png) 100% 100% no-repeat,
+  url(../images/blue-bg.png);
+}
+
 @-moz-document url-prefix()
 {
     .services-panel {
@@ -2358,6 +2431,10 @@ ul {
   letter-spacing: -0.45px;
 }
 
+.services-body.blue-body h2{
+  color: #10AFCF;
+}
+
 .services-body .text1{
 	font-family: PFAgoraSansPro_Bold;
 	font-size: 11pt;
@@ -2409,6 +2486,7 @@ ul {
   border-top: 2px solid #D9D7D8;
 }
 
+.discuss-btn2 a,
 .discuss-btn a{
   height: 50px;
   border: none;
@@ -2500,7 +2578,8 @@ ul {
   margin-top: 5px;
 }
 /* Подложка */
-#overlay{
+#overlay,
+#overlayForMap{
   z-index: 3; /* подложка должна быть выше слоев элементов сайта, но ниже слоя модального окна */
   position: fixed; /* всегда перекрывает весь сайт */
   background-color: #000; /* черная */
@@ -2644,6 +2723,7 @@ ul {
   width: 1000px;
   transform: rotate(34deg);
   left: -357px;
+  left: -415px;
   position: absolute;
   top: -366px;
 }
@@ -2679,3 +2759,183 @@ ul {
   display: none;
 }
 
+.site_map_btn{
+  position: absolute;
+  bottom: 0px;
+  left: 62px;
+  top: -50px;
+  width: 975px;
+  height: 50px;
+  background-color: rgba(255,255,255,0.1);
+  box-shadow: inset 0px 0px 1px 0px #2B3B45;
+}
+
+.site_map_btn .site_map_head{
+  cursor: pointer;
+  height: 50px;
+}
+
+.site_map_tpl .for_drop-list1 .inside >div{
+  float: left;
+  width: 145px;
+}
+
+.site_map_tpl .for_drop-list1 .inside >div{
+
+}
+
+.site_map_tpl{
+  width: 975px;
+  height: 615px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -488px;
+  margin-top: -300px;
+  background-color: rgb(255,255,255);
+  box-shadow: inset 0px 0px 1px 0px #2B3B45;
+  z-index: 5;
+}
+
+.site_map_head div{
+  float: left;
+}
+
+ .site_map_head .site_map_pic{
+  background-image: url("../images/map_arr.png");
+  background-repeat: no-repeat;
+  background-position: 30px 18px;
+  width: 55px;
+   height: 50px;
+}
+
+.site_map_head .site_map_title{
+  width: 300px;
+  line-height: 57px;
+  font-family: PFAgoraSansPro_thin !important;
+  font-size: 22px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.site_map_head .site_map_close{
+  background-image: url("../images/close.png");
+  width: 50px;
+  height: 50px;
+  float: right;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+
+.site_map_prehead{
+  display: none;
+  height: 13px;
+}
+
+.open .site_map_head{
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 1px solid #EBE8DC;
+  height: 52px;
+}
+
+.open .site_map_prehead{
+  display: block;
+  border-top: 9px solid #272E41;
+}
+
+.open .site_map_close{
+  display: block;
+  cursor: pointer;
+}
+.open .site_map_pic{
+  transform: rotate(90deg);
+  background-position: 22px 10px;
+}
+
+.sm_col{
+  float: left;
+  width: 250px;
+  min-height: 300px;
+}
+
+.sm_col.col_2{
+  width: 335px;
+}
+.sm_col.col_1{
+  width: 360px;
+}
+
+.sm_col.col_1 .sm_col_body > div {
+  width: 180px;
+}
+
+.sm_col.col_1 ul li a{
+  text-transform: uppercase;
+}
+
+.sm_col .sm_col_head{
+  width: 100%;
+  height: 65px;
+}
+
+.sm_col .all_prj_list{
+
+}
+
+.sm_col .all_prj_list .inside ul{
+  display: block;
+  width: 175px;
+  height: 390px;
+  overflow-y:scroll;
+}
+
+.sm_col .all_prj_list .inside ul li{
+  position:relative;
+}
+
+.site_map_body >div{
+  overflow: hidden;
+  padding-left: 40px;
+}
+
+.site_map_body ul{
+  padding-left:25px;
+}
+
+.sm_col .sm_col_head h2{
+  color: #000000;
+  font-family: PFAgoraSansPro_thin !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 40px !important;
+}
+
+.text2_float{
+
+}
+
+.text2_float div{
+  float: left;
+}
+
+.text2_float div.img_border{
+  border: 3px solid #E6E9F0;
+  height: 90px;
+  width: 90px;
+  margin: 15px 30px 15px 15px;
+  position: relative;
+}
+.text2_float div.img_border img{
+  position: absolute;
+  top:-15px;
+  left: -15px;
+}
+
+.text2_float div.text_holder_2{
+  width: 500px;
+
+}
