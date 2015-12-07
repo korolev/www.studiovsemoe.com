@@ -105,6 +105,7 @@ ol li{
 }
 
 .header .absolute_img_holder{
+  overflow: hidden;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -116,10 +117,20 @@ ol li{
   z-index: -1;
 }
 
+.absolute_img_holder .bg_part{
+  /*border: 1px solid #fff;*/
+  box-sizing: border-box;
+  position: absolute;
+}
+
 .header.active1,
 .header.active1 .absolute_img_holder{
   background-image: url(../images/header-bg1.jpg);
 
+}
+
+.header.active1 .absolute_img_holder{
+  height: 360px;
 }
 
 .header.active2,
@@ -325,6 +336,10 @@ ol li{
 
 .header-middle.main-page{
   height: 317px;
+}
+
+.container-fluid .main-page{
+  background-image: none;
 }
 
 .logo {
@@ -2889,7 +2904,7 @@ ol li{
 .sm_col .all_prj_list .inside ul{
   display: block;
   width: 175px;
-  height: 390px;
+  height: 380px;
   overflow-y:scroll;
 }
 
