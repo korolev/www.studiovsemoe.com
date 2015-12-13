@@ -324,7 +324,8 @@ $(document).ready(function () {
                     //    backgroundColor: 'red'
                     //});
                     //part.hide(200);
-                    part.animate({top:600},600);
+                    //part.animate({top:600},600);
+                    part.animate({marginTop:45,marginLeft:45,width:0,height:0},600);
                 } catch (e) {
                     console.log(e);
                 }
@@ -348,7 +349,7 @@ $(document).ready(function () {
 
         console.log(partsMap);
     };
-    animateMainTheme();
+
 
     var nextButtonClick = function () {
         $('body').trigger('mouseup');
@@ -362,7 +363,8 @@ $(document).ready(function () {
         console.log('startAnimate', arguments);
         setTimeout(function () {
             //nextButtonClick();
-        }, 5000);
+            animateMainTheme();
+        }, 3000);
     });
 
     $("body").on('mouseup', function (e) {
